@@ -1,4 +1,4 @@
-# electrothon
+# Electrothon
 ## Proposed System
 - We plan to create a product authentication and consumer engagement website that helps in analyzing counterfeit medicines. 
 - The main motto of our website is to ~ ensure safe and secure medication for all ~
