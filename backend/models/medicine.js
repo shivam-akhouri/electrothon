@@ -19,7 +19,7 @@ const MedicineSchema = new Schema({
         type: Date,
         required: [true, 'expDate field is required'],
     },
-    Dosage: {
+    dosage: {
         type: String,
         required: [true, 'Dosage field is required'],
     },

@@ -37,6 +37,15 @@ router.get('/manufacturers/:id', (req, res, next) => {
 router.post('/medicines', (req, res, next) => {
     Medicine.create(req.body).then((medicine) => {
         res.json(medicine);
+        console.log(medicine);
+    }).catch(next);
+});
+
+//get specific med using id
+router.get('/manufacturers/:id', (req, res, next) => {
+    Medicine.findOne({ _id: req.params.id }).then((medicine) => {
+        res.json(medicine);
+        // console.log(medicine);
     }).catch(next);
 });
 
