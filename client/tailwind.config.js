@@ -3,7 +3,9 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {animation: {
+      'bounce-slow': 'bounce 2s alternate infinite',
+    }},
   },
   plugins: [],
 }
