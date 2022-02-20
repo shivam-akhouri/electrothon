@@ -1,6 +1,7 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt';
 import '../../../src/App.css';
+import { Link } from "react-router-dom";
 
 function ManReg() {
   return (
@@ -24,7 +25,7 @@ function ManReg() {
           
           
  
-           <input type="Submit" className='mt-4 animate-bounce-slow cursor-pointer font-poppins rounded-full px-5 py-1 bg-white bg-opacity-50 hover:bg-white hover:bg-opacity-80 '/>
+           <Link to='/ManReg/MedReg'>  <input type="Submit" className='mt-4 animate-bounce-slow cursor-pointer font-poppins rounded-full px-5 py-1 bg-white bg-opacity-50 hover:bg-white hover:bg-opacity-80 '/></Link>
          </form>
  
        </div>
