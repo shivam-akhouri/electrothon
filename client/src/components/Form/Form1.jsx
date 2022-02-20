@@ -1,8 +1,9 @@
 import React from 'react'
 import Tilt from 'react-parallax-tilt';
 import '../../../src/App.css';
+import { Link } from "react-router-dom";
 
-function Form1({name,img}) {
+function Form1({name,img,link}) {
   return (
     <div className="App bg-gradient-to-r from-green-400 to-blue-500 hover:from-green-400 hover:to-blue-500   h-screen w-screen relative overflow-hidden flex justify-center items-center">
     <div className="h-40-r w-40-r bg-gradient-to-r from-green-400 to-blue-500 rounded-full absolute left-2/3 -top-56 transform rotate-160 animate-pulse"></div>
@@ -17,7 +18,7 @@ function Form1({name,img}) {
         {img}
        
         </form>
-        <input type="Submit" className='mt-4 cursor-pointer font-poppins rounded-full px-5 py-1 bg-green-400 hover:from-green-500 hover:to-blue-600 '/>
+       <Link to={link}> <input type="Submit" className='mt-4 cursor-pointer font-poppins rounded-full px-5 py-1 bg-green-400 hover:from-green-500 hover:to-blue-600 '/></Link>
        
       </div>
     </Tilt>
