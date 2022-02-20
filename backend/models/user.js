@@ -6,13 +6,14 @@ const UserSchema = new Schema({
     email: {
         type: String,
         required: [true, 'Name field is required'],
+        unique: true
     },
     password: {
-        type: String,
+        type: Object,
         required: [true, 'Password field is required'],
     }
 });
 
-const User = mongoose.model('ninja', UserSchema);
+const User = mongoose.model('user', UserSchema);
 
 module.exports = User;
